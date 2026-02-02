@@ -1,72 +1,71 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# 🎮 Hệ thống Website Bán Tay Cầm Chơi Game
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+[cite_start]**Đồ án học phần:** Thiết kế Web Nâng cao [cite: 1]
+[cite_start]**Giảng viên hướng dẫn:** Nguyễn Thị Thùy Liên [cite: 1]
+[cite_start]**Đơn vị:** Trường Công nghệ thông tin - Đại học Phenikaa [cite: 1]
+[cite_start]**Nhóm thực hiện:** Nhóm 7 [cite: 1]
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 👥 Thành viên nhóm & Phân công nhiệm vụ
+| STT | Họ và Tên | MSSV | Vai trò chính |
+|-----|-----------|------|---------------|
+| 1 | **Nguyễn Anh Đức** | 23010650 | [cite_start]Dashboard, CRUD Sản phẩm/Tin tức, Xử lý hiển thị dữ liệu [cite: 1, 6] |
+| 2 | **Bùi Văn Khoa** | 23012842 | [cite_start]Giao diện (UI/UX), Responsive, Header/Search, Trang chi tiết [cite: 1, 2] |
+| 3 | **Đỗ Tùng Lâm** | 23010874 | [cite_start]Xử lý đặt hàng (Checkout), Admin Order, Validate form [cite: 1, 4] |
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Giới thiệu dự án
+[cite_start]Đây là website thương mại điện tử chuyên kinh doanh các phụ kiện và thiết bị chơi game (Console, Tay cầm...)[cite: 27]. [cite_start]Hệ thống được xây dựng theo mô hình **MVC** (Model - View - Controller) [cite: 30][cite_start], hỗ trợ đa ngôn ngữ (Việt/Anh) và chuyển đổi tiền tệ[cite: 28].
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠 Công nghệ sử dụng
+* [cite_start]**Backend:** PHP 8.1, Laravel Framework 9[cite: 33].
+* [cite_start]**Database:** MySQL / MariaDB[cite: 35].
+* [cite_start]**Frontend:** Blade Template, Bootstrap 4, Font Awesome[cite: 38, 41].
+* [cite_start]**Libraries:** jQuery, Axios, Morris.js (Biểu đồ)[cite: 42, 44].
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ⚙️ Chức năng chính
+### [cite_start]1. Phía Người dùng (Client) [cite: 49]
+* **Tài khoản:** Đăng ký, Đăng nhập, Quản lý thông tin cá nhân.
+* [cite_start]**Sản phẩm:** Xem danh sách, Chi tiết sản phẩm, Lọc theo giá/thương hiệu[cite: 57, 69].
+* [cite_start]**Mua hàng:** Thêm vào giỏ hàng, Cập nhật số lượng, Thanh toán (Checkout)[cite: 62, 63].
+* [cite_start]**Tiện ích:** Tìm kiếm sản phẩm thông minh[cite: 68].
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### [cite_start]2. Phía Quản trị (Admin) [cite: 73]
+* [cite_start]**Dashboard:** Thống kê doanh thu, số lượng đơn hàng qua biểu đồ[cite: 76].
+* [cite_start]**Quản lý:** Sản phẩm, Danh mục, Người dùng[cite: 77, 78, 79].
+* [cite_start]**Đơn hàng:** Xem chi tiết đơn hàng, Cập nhật trạng thái giao hàng/thanh toán[cite: 80].
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+---
 
-## Contributing
+## 🔧 Hướng dẫn cài đặt (Localhost)
+1.  **Clone dự án:**
+    ```bash
+    git clone [https://github.com/Nguyen-Anh-Duc123/WedNangCao-Th1-Nhom7.git](https://github.com/Nguyen-Anh-Duc123/WedNangCao-Th1-Nhom7.git)
+    cd WedNangCao-Th1-Nhom7
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2.  **Cài đặt thư viện:**
+    ```bash
+    composer install
+    ```
 
-## Security Vulnerabilities
+3.  **Cấu hình môi trường:**
+    * Copy file `.env.example` thành `.env`.
+    * Cấu hình thông tin DB trong file `.env`: `DB_DATABASE=elaravel` 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4.  **Khởi chạy:**
+    ```bash
+    php artisan key:generate
+    php artisan migrate
+    php artisan serve
+    ```
+    Truy cập: `http://127.0.0.1:8000`
 
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+© 2026 - Nhóm 7 Phenikaa University
